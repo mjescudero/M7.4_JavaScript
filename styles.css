@@ -1,0 +1,44 @@
+.contenidor {
+   
+    margin: 50px;
+    padding: 40px;
+    height: 100vh;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /*background-color:aqua*/
+
+    
+}
+.contenidor > input {display:none;}
+
+.contenidor > label{
+    margin: 5px;
+    padding: 10px;
+    font-size: 50px;
+    color:red; 
+}
+
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color:rgb(220, 20, 177);
+}
+
+
+#rate-5:checked ~ label,
+#rate-4:checked ~ label,
+#rate-3:checked ~ label,
+#rate-2:checked ~ label,
+#rate-1:checked ~ label{
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+
+label[for="rate-0"] {
+  display: block;
+  padding: 10px
+  color: #999;
+}
